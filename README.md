@@ -4,5 +4,5 @@ Full documentation: [https://alejandrok5.wordpress.com/2011/06/27/arduino-with-d
 
 ## NOTE ##
 
-Any help is more than welcome, I wrote this code in 2011 and is using a very old verion of Django.
+	Any help is more than welcome, I wrote this code in 2011 using a very old verion of Django.
 

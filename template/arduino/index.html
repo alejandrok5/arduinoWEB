@@ -1,0 +1,46 @@
+<!--
+#
+# This program is free software; you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation; either version 2 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program; if not, write to the Free Software
+# Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301
+# USA
+-->
+
+{% extends "arduino/base.html" %}
+    {% block title %}
+        Directorio ODI
+    {% endblock %}
+{% block content %}
+
+<!--==============================-->
+    <form action="." method="get">
+        <p>{{ form.text }}<input type="submit" value="Encode" class="button" /></p>
+    </form>
+    {%  if  morse %} 
+        <table border=1px>
+            <tr>
+                {% for leter in text %}
+                    <td><center>{{ leter }}</center></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                {% for code in morse %}
+                    <td><center>{{ code }}</center></td>
+                {% endfor %}
+            </tr>
+        <tr>
+        </tr>
+        </table>
+    {% endif %}    
+{% endblock %}
+
